@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  	<title>Green Life</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+		
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/style.css">
+    
+  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  </head>
+  <body>
+		<div class="wrapper d-flex align-items-stretch">
+			<nav id="sidebar">
+				<div class="p-4 pt-5">
+		  		<a href="#" class="img logo rounded-circle mb-5" style="background-image: url(images/logo.jpg);"></a>
+	        <ul class="list-unstyled components mb-5">
+	          <li>
+	            <a href="index.html " data-toggle="collapse" aria-expanded="true" class="dropdown-toggle" >Plant Details</a>
+	            <ul class="collapse list-unstyled" id="homeSubmenu">
+                <li>
+                    <a href="#">Wheter</a>
+                </li>
+                <li>
+                    <a href="#">Tempreture</a>
+                </li>
+                <li>
+                    <a href="#">Humidity</a>
+                </li>
+	            </ul>
+	          </li>
+            <li>
+              <a href="post.html" data-toggle="collapse" aria-expanded="true" class="dropdown-toggle">Post</a>
+              <ul class="collapse list-unstyled" id="pageSubmenu">
+                <li>
+                    <a href="#">Comment</a>
+                </li>
+	            </ul>
+	          </li>
+            <li>
+             
+              <a href="product.html" data-toggle="collapse" aria-expanded="true" class="dropdown-toggle">Product</a>
+              <ul class="collapse list-unstyled" id="homeSubmenu">
+              <li>
+                  <a href="#">Seeds</a>
+              </li>
+              <li>
+                  <a href="#">Plants</a>
+              </li>
+              <li>
+                  <a href="#">Tools</a>
+              </li>
+              <li>
+                <a href="#">Pots</a>
+            </li>
+              </ul>
+	          
+	          <li>
+              <a href="FAQ.html">FAQ</a>
+	          </li>
+            <li>
+              <a href="pro.html">Profile</a>
+	          </li>
+	        </ul>
+	      </div>
+    	</nav>
+
+        <!-- Page Content  -->
+      <div id="content" class="p-4 p-md-2">    
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container-fluid">
+            <button type="button" id="sidebarCollapse" class="btn btn-dark">
+              <i class="fa fa-bars"></i>
+              <span class="sr-only"></span>
+            </button>
+            <span class="h4">&nbsp;&nbsp;<img src="F.png"  style="width:40px;height:40px;">&nbsp;&nbsp;Green Life</span>
+            <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa fa-bars"></i>
+            </button> 
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="nav navbar-nav ml-auto">
+                <li class="nav-item ">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item active ">
+                  <a class="nav-link" href="#">Plant Details</a>
+              </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Post</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Product</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">FAQ</a>
+                </li>
+                <li class="nav-item nav-profile dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" id="profileDropdown">
+                    <img src="./images/logo.jpg"  style="height:40px;width:40px;margin-top:-5px;" class="rounded-circle" alt="profile"/>
+                  </a>
+                  <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="profileDropdown">
+                    <a class="dropdown-item">
+                      <!-- <i class="ti-settings text-primary"></i> -->
+                      Settings
+                    </a>
+                    <a class="dropdown-item">
+                      <!-- <i class="ti-power-off text-primary"></i> -->
+                      Logout
+                    </a>
+                  </div>
+                  </li>
+              </ul>
+            </div>
+          </div>
+        </nav>  
+        
+        
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+          <li class="nav-item " role="presentation">
+            <button class="nav-link active  text-dark" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Wheter</button>
+          </li>
+          &nbsp;
+          <li class="nav-item" role="presentation">
+            <button class="nav-link text-dark" id="nav-profile-tab" data-bs-toggle="tab"  data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Tempreture</button>
+          </li>
+          &nbsp;
+          <li class="nav-item" role="presentation">
+            <button class="nav-link text-dark" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Humidity</button>
+          </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+          <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+          
+            <div class="row">
+              <div class="col-md-12 grid-margin">
+                <div class="d-flex justify-content-between align-items-center">
+                 
+                  
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <p></p>
+              <div class="col-md-3 grid-margin stretch-card">
+                <div class="card">
+                  <div class="card-body">
+                    <p class="card-title text-md-center text-xl-left">add info</p>
+                    <div class="d-flex flex-wrap justify-content-between justify-content-md-center justify-content-xl-between align-items-center">
+                      <h3 class="mb-0 mb-md-2 mb-xl-0 order-md-1 order-xl-0">60</h3>
+                      
+                      <i class="ti-calendar icon-md text-muted mb-0 mb-md-3 mb-xl-0"></i>
+                    </div>  
+                    <p class="mb-0 mt-2 text-success">24.12% <span class="text-black ms-1"><small>(30 days)</small></span></p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 grid-margin stretch-card">
+                <div class="card">
+                  <div class="card-body">
+                    <p class="card-title text-md-center text-xl-left">remove info</p>
+                    <div class="d-flex flex-wrap justify-content-between justify-content-md-center justify-content-xl-between align-items-center">
+                      <h3 class="mb-0 mb-md-2 mb-xl-0 order-md-1 order-xl-0">12</h3>
+                      <i class="ti-user icon-md text-muted mb-0 mb-md-3 mb-xl-0"></i>
+                    </div>  
+                    <p class="mb-0 mt-2 text-danger">0.47% <span class="text-black ms-1"><small>(15 days)</small></span></p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 grid-margin stretch-card">
+                <div class="card">
+                  <div class="card-body">
+                    <p class="card-title text-md-center text-xl-left">like</p>
+                    <div class="d-flex flex-wrap justify-content-between justify-content-md-center justify-content-xl-between align-items-center">
+                      <h3 class="mb-0 mb-md-2 mb-xl-0 order-md-1 order-xl-0">40</h3>
+                      <i class="ti-agenda icon-md text-muted mb-0 mb-md-3 mb-xl-0"></i>
+                    </div>  
+                    <p class="mb-0 mt-2 text-success">64.00%<span class="text-black ms-1"><small>(15 days)</small></span></p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 grid-margin stretch-card">
+                <div class="card">
+                  <div class="card-body">
+                    <p class="card-title text-md-center text-xl-left">dislike info</p>
+                    <div class="d-flex flex-wrap justify-content-between justify-content-md-center justify-content-xl-between align-items-center">
+                      <h3 class="mb-0 mb-md-2 mb-xl-0 order-md-1 order-xl-0">24</h3>
+                      <i class="ti-layers-alt icon-md text-muted mb-0 mb-md-3 mb-xl-0"></i>
+                    </div>  
+                    <p class="mb-0 mt-2 text-danger">0.47%<span class="text-black ms-1"><small>(15 days)</small></span></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+
+          </div>
+          <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+            <div class="col-md-3 mt-5 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <p class="card-title text-md-center text-xl-left">Tempreture </p>
+                  <div class="d-flex flex-wrap justify-content-between justify-content-md-center justify-content-xl-between align-items-center">
+                    <h3 class="mb-0 mb-md-2 mb-xl-0 order-md-1 order-xl-0">40016</h3>
+                    <i class="ti-agenda icon-md text-muted mb-0 mb-md-3 mb-xl-0"></i>
+                  </div>  
+                  <p class="mb-0 mt-2 text-success">64.00%<span class="text-black ms-1"><small>(30 days)</small></span></p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+            <div class="col-md-3 mt-5 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <p class="card-title text-md-center text-xl-left">Downloads</p>
+                  <div class="d-flex flex-wrap justify-content-between justify-content-md-center justify-content-xl-between align-items-center">
+                    <h3 class="mb-0 mb-md-2 mb-xl-0 order-md-1 order-xl-0">40016</h3>
+                    <i class="ti-agenda icon-md text-muted mb-0 mb-md-3 mb-xl-0"></i>
+                  </div>  
+                  <p class="mb-0 mt-2 text-success">64.00%<span class="text-black ms-1"><small>(30 days)</small></span></p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+		</div>
+ 
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
